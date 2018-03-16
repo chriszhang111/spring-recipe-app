@@ -1,0 +1,69 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<!--&lt;!&ndash; Navigation &ndash;&gt;-->
+<!--<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">-->
+<!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--<span class="navbar-toggler-icon"></span>-->
+<!--</button>-->
+<!--<a class="navbar-brand" href="/"> <a class="btn btn-lg btn-success" href="#">-->
+<!--<i class="fa fa-flag fa-1x pull-left">Recipe</i> </a>-->
+
+<!--&lt;!&ndash;<div class="collapse navbar-collapse" id="navbarsExampleDefault">&ndash;&gt;-->
+<!--&lt;!&ndash;<ul class="navbar-nav ml-auto">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<li class="nav-item {% if request.endpoint=='party_page.create' %} active {% endif %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<a class="nav-link" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>####</a>&ndash;&gt;-->
+<!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</a>-->
+<!--</nav>-->
+
+<body>
+
+
+
+
+
+<div class="text-center">
+<h3>Hello welcome to my recipe!!!!!!</h3>
+</div>
+
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="recipe : ${recipes}">
+        <td th:text="${recipe.id}">123</td>
+        <td th:text="${recipe.description}">Tasty Goodnees</td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
